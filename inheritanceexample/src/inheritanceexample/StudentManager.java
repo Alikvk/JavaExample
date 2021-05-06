@@ -1,6 +1,6 @@
 package inheritanceexample;
 
-public class StudentManager {
+public class StudentManager extends UserManager{
 	public void enroll(Student student,String courseName) {
 		System.out.println("User " + student.getFirstName() + " " + student.getLastName()  +" enrolled the course: " + courseName);
 	}

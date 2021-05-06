@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Instructor enginDemirog = new Instructor(1, "engindemirog", "4536",1 , "Engin", "Demirog",  1, 20000);
-		Instructor nukhetTuncbilek = new Instructor(2, "Nükhet", "Tunçbilek",2, "nukhetTuncbilek", "54353", 2, 30000);
+		Instructor enginDemirog = new Instructor(1, "enginSag", "4536",1 , "Engin", "Sag",  1, 20000);
+		Instructor nukhetTuncbilek = new Instructor(2, "nuketTunc", "54353",2,"Nüket", "Tunç", 2, 30000);
 		
 		Student ali = new Student(1, "Ali", "Kavak",3, "alikavak", "12345", 1, 10);
 		Student veli = new Student(2, "Veli", "Kaya",4, "velikaya", "21434", 2 , 20);

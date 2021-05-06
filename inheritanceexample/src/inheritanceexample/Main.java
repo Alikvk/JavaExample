@@ -3,6 +3,13 @@ package inheritanceexample;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		
+		User user = new User(5, "User", "D", "UserD", "45678");
+		User user1 = new User(8, "User1", "A", "User1A", "4562");
+		User user2 = new User(80, "User2", "B", "User2B", "1235");
+		
+		
 		Instructor enginDemirog = new Instructor(1, "Engin", "Demirog", "engindemirog", "1234", 1, 20000);
 		Instructor nukhetTuncbilek = new Instructor(1, "Nükhet", "Tunçbilek", "nukhetTuncbilek", "54353", 1, 30000);
 		
@@ -37,6 +44,22 @@ public class Main {
 		studentManager.delete(veli, csharp.getName());
 		studentManager.delete(veli, java.getName());
 		
+		
+		UserManager userManager = new UserManager();
+		
+		userManager.login(user);
+		userManager.login(user1);
+		userManager.login(user2);
+		
+		userManager.logout(user);
+		userManager.logout(user1);
+		userManager.logout(user2);
+		
+		userManager.addComment(user);
+		userManager.addComment(user1);
+		userManager.addComment(user2);
+
+
 	}
 
 }
